@@ -11,16 +11,12 @@ class YTstats:
         self.channel_statistics = None
         self.video_data = None
 
-    def extract_all(self):
-        self.get_channel_statistics()
-        self.get_channel_video_data()
-
+    
     def get_channel_statistics(self):
         """Extract the channel statistics"""
         print('get channel statistics...')
         url = f'https://www.googleapis.com/youtube/v3/channels?part=statistics&id={self.channel_id}&key={self.api_key}'
         # print(url)
-        pbar = tqdm(total=1)
         
         json_url = requests.get(url)
         data = json.loads(json_url.text)
@@ -32,9 +28,8 @@ class YTstats:
             data = {}
 
         self.channel_statistics = data
-        print(self.channel_statistics)
-        # pbar.update()
-        # pbar.close()
+        # print(self.channel_statistics)
+
         return data
 
   
