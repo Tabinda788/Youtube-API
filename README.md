@@ -13,7 +13,7 @@ An Api key will be generated. Copy the key and that will be your developer key.
 
 # Step 2:
 
-Copy the channel id of yoor choice by clicking on any channel and copying the string that appears at the end of the channal url.
+Copy the channel id of your choice by clicking on any channel and copying the string that appears at the end of the channal url.
 
 
 # Step 3:
@@ -26,4 +26,4 @@ Run main.py and the data will be saved in json format into your working diretory
 
 # Step 5:
 
-Go to colab or the notebook of your choice and analyze a little.
+Go to colab or the notebook of your choice and analyze the dowloaded data.
