@@ -92,7 +92,7 @@ class YTstats:
             url += "&maxResults=" + str(limit)
         # print("printing",url)
         vid , npt = self._get_channel_videos_per_page(url)
-        print(vid,npt)
+        # print(vid,npt)
         idx = 0
         while(npt is not None and idx < 10):
             nexturl = url + "&pageToken=" + npt
